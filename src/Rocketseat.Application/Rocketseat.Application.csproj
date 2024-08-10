@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+<PropertyGroup>
+	<TargetFramework>net8.0</TargetFramework>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<Nullable>enable</Nullable>
+	<NoWarn>$(NoWarn);1998</NoWarn>
+</PropertyGroup>
+
+
+<ItemGroup>
+	<PackageReference Include="AutoMapper" Version="13.0.1" />
+	<PackageReference Include="FluentValidation" Version="11.9.2" />
+	<PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="8.0.7" />
+	<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
+	<PackageReference Include="Serilog.AspNetCore" Version="8.0.2" />
+	<PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+</ItemGroup>
+
+
+<ItemGroup>
+  <ProjectReference Include="..\Rocketseat.Domain\Rocketseat.Domain.csproj" />
+  <ProjectReference Include="..\Rocketseat.Exceptions\Rocketseat.Exceptions.csproj" />
+</ItemGroup>
+	
+</Project>
