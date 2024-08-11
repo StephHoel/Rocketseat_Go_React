@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "5a0ac17b-b065-40db-b398-8d2a4da4cbe2",
+		"name": "Rocketseat WebSockets",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31589996"
+	},
+	"item": [
+		{
+			"name": "PostMessageOnRoom",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/plain"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"message\": \"mensagem 3\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:7131/api/Rooms/117a4c00-09e0-4297-929d-80b2f339a71e/messages",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7131",
+					"path": [
+						"api",
+						"Rooms",
+						"117a4c00-09e0-4297-929d-80b2f339a71e",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRooms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7131/api/Rooms",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7131",
+					"path": [
+						"api",
+						"Rooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMessagesByRoomId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/plain"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7131/api/rooms/117a4c00-09e0-4297-929d-80b2f339a71e/messages",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7131",
+					"path": [
+						"api",
+						"rooms",
+						"117a4c00-09e0-4297-929d-80b2f339a71e",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMessageByRoomIdAndMessageId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/plain"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7131/api/rooms/117a4c00-09e0-4297-929d-80b2f339a71e/messages/0e963b8b-845e-4ef7-8499-637805ebaf56",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7131",
+					"path": [
+						"api",
+						"rooms",
+						"117a4c00-09e0-4297-929d-80b2f339a71e",
+						"messages",
+						"0e963b8b-845e-4ef7-8499-637805ebaf56"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddReactToMessage",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7131/api/rooms/117a4c00-09e0-4297-929d-80b2f339a71e/messages/0e963b8b-845e-4ef7-8499-637805ebaf56/react",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7131",
+					"path": [
+						"api",
+						"rooms",
+						"117a4c00-09e0-4297-929d-80b2f339a71e",
+						"messages",
+						"0e963b8b-845e-4ef7-8499-637805ebaf56",
+						"react"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveReactFromMessage",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7131/api/rooms/117a4c00-09e0-4297-929d-80b2f339a71e/messages/0e963b8b-845e-4ef7-8499-637805ebaf56/react",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7131",
+					"path": [
+						"api",
+						"rooms",
+						"117a4c00-09e0-4297-929d-80b2f339a71e",
+						"messages",
+						"0e963b8b-845e-4ef7-8499-637805ebaf56",
+						"react"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
